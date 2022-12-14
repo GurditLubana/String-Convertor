@@ -1,6 +1,7 @@
 import './App.css';
 import NavigationBar from './NavigationBar';
-import InputBox from './InputBox';
+import InputBox from './InputBox';                                      
+import Result from './Result';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
     <>
     <NavigationBar/>
     <InputBox/>
+    <Result/>
+
     </>
   );
 }
