@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Result(props) {
+    
+    
     return (
-        <div>
-            
-        </div>
+        <>
+       
+        </>
     );
 }
 
