@@ -17,12 +17,19 @@ function NavigationBar(props) {
       </style>
       <Navbar className = "navBar"  expand="lg">
         <Container className="">
-          <Navbar.Brand href="#home">UpperCase Convertor</Navbar.Brand>
+          <Navbar.Brand href="#home">
+          <img
+              alt=""
+              src="/logo.png"
+              width="160"
+              height="30"
+              className="d-inline-block align-top py-0"
+            /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className = "navBar" href="#">Home</Nav.Link>
-              <Nav.Link className = "navBar" href="#">About</Nav.Link>
+              <Nav.Link className = "navBar text-light" href="#">Home</Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
