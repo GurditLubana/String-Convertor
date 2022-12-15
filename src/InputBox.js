@@ -1,9 +1,13 @@
 import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
 import Result from "./Result";
+
+
+
+
 function InputBox(props) {
     const[inputValue,setInput] = useState("") ;
-    const [converted,setConverted] = useState('Your Converted Text will show up here.');
+    const [converted,setConverted] = useState('');
 
  
    
@@ -21,7 +25,12 @@ function InputBox(props) {
       let covertedValue = inputValue.toLowerCase();
       setConverted(covertedValue);
     }
-    
+   
+    const clearTextArea = ()=>{
+
+      setInput("");
+      setConverted("");
+    }
     
   return (
     <>
@@ -35,6 +44,7 @@ function InputBox(props) {
       </Form>
       <button  className="btn btn-primary mx-2" onClick={convertUppercase}>Convert to Uppercase</button>
       <button className="btn btn-primary"onClick={convertLowercase}>Convert to Lowercase</button>
+      <button className="btn btn-primary mx-2"onClick={clearTextArea}>Clear text</button>
 
       <Result text = {converted}/> 
       
