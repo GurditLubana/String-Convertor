@@ -1,3 +1,5 @@
+![1](functionality.gif)
+
 # String value convertor
 
 ## Purpose
@@ -10,3 +12,4 @@ This website has been created to get familiar with the concepts of react app fra
 * Convert any string to the uppercase.
 * Convert any string to the lowercase.
 * Copy whole converted string.
+
